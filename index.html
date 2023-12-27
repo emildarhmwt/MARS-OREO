@@ -1,0 +1,432 @@
+<!-- <?html
+
+        session_start();
+
+        if (!isset($_SESSION['username'])) {
+            header("Location: index.html");
+        }
+
+        ?> -->
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="./aset/css/bootstrap.css">
+    <!-- bootstrap js-->
+    <script src="./js/bootstrap.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+    <title> Open Recruitment Of UKM MARS </title>
+    <style>
+        * {
+            background: #905A5A;
+        }
+
+        #section-header .img-logo {
+            width: 150px;
+            height: auto;
+            left: 141px;
+            top: 27px;
+        }
+
+        #section-header .btn-warning {
+            position: absolute;
+            width: 128px;
+            height: auto;
+            left: 900px;
+            top: 85px;
+
+            background: #E79A40;
+            border-radius: 30px;
+        }
+
+        #section-header .pt-4 {
+            font-family: Sahitya;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 39px;
+        }
+
+        #banner .img-hearing {
+            width: 100%;
+            height: auto;
+        }
+
+        #banner .banner-text {
+            margin-top: 100px;
+        }
+
+        #banner span {
+            color: #E1CE22;
+        }
+
+        #banner h1 {
+            margin-top: 80px;
+            margin-bottom: 30px;
+            font-size: 60px;
+            color: #780B0B;
+        }
+
+        @font-face {
+            font-family: "Font Digital";
+            src: url('Flavors.ttf');
+        }
+
+        .digital {
+            font-family: "Font Digital";
+        }
+
+        #banner h3 {
+            margin-top: 10px;
+            font-family: Sahitya;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        #arti h1 {
+            margin-top: 100px;
+            font-family: Sahitya;
+            font-size: 60px;
+            text-align: center;
+            color: #FEAC0C;
+        }
+
+        #arti p {
+            font-family: Sahitya;
+            font-size: 40px;
+            line-height: 93px;
+            text-align: center;
+            color: black;
+        }
+
+        #arti2 .img-hearing2 {
+            width: 400px;
+            height: auto;
+        }
+
+        #arti2 .pengertian {
+            font-family: Sahitya;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            color: #000000;
+            margin-top: 120px;
+        }
+
+        #pengurus h1 {
+            margin-top: 100px;
+            font-family: Sahitya;
+            font-size: 60px;
+            text-align: center;
+            color: #FEAC0C;
+        }
+
+        #pengurus .mars {
+            font-family: Sahitya;
+            font-size: 40px;
+            line-height: 93px;
+            text-align: center;
+            color: black;
+        }
+
+        #pengurus .text1 {
+            color: black;
+        }
+
+        #pengurus .card-img-top {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        #pengurus .card-body {
+            background-color: #E38B8B;
+            border-radius: 10px;
+            color: black;
+        }
+
+        #kegiatan h1 {
+            margin-top: 100px;
+            font-family: Sahitya;
+            font-size: 60px;
+            text-align: center;
+            color: #FEAC0C;
+        }
+
+        #kegiatan .mars {
+            font-family: Sahitya;
+            font-size: 40px;
+            line-height: 93px;
+            text-align: center;
+            color: black;
+        }
+
+        #kegiatan2 h2 {
+            margin-top: 100px;
+            font-family: Sahitya;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        #kegiatan2 h6 {
+            font-family: Sahitya;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #kegiatan2 .text1 {
+            color: black;
+        }
+
+        #section-footer hr {
+            color: #905A5A;
+        }
+
+        #section-footer .container {
+            margin-top: 20px;
+        }
+
+        #section-footer .img-footer {
+            width: 200px;
+            height: auto;
+        }
+
+        #section-footer h6 {
+            color: #ACACAC;
+        }
+
+        #section-footer i {
+            font-size: 30px;
+            margin-right: 10px;
+            color: #ACACAC;
+        }
+
+        #section-footer .kolom1 {
+            color: #ACACAC;
+        }
+
+        #section-footer label {
+            font-family: Sahitya;
+            font-style: normal;
+            font-weight: bold;
+            color: #C4C4C4;
+        }
+
+        #section-footer li {
+            list-style: none;
+            font-family: Sahitya;
+            font-style: normal;
+            color: #C4C4C4;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="section-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="img-logo" src="https://drive.google.com/uc?export=view&id=12Imti4g7K-zyHGhEo1IAvT9IkjJ7YAg4"></a>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav pt-4">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="./about_us.html">About</a>
+                            <a class="nav-link" href="./formulir_oreo.html">Formulir</a>
+                            <a class="nav-link" href="./contact_us.html">Contact US</a>
+                            <a href="#" class="btn btn-warning"> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div id="banner">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5 banner-text">
+                    <h1 class="digital"> OREO </h1>
+                    <h3> Open Recruitment of <br> <span> UKM MARS </span> </h3>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-hearing" src="https://drive.google.com/uc?export=view&id=1hH2xUedKUkY7mX4VyRP8_mCzsTJpijHh">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="arti">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="akhir text-center">
+                        <h1> Apa Itu </h1>
+                        <p>UKM MARS ? </p>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="arti2">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-6">
+                    <img class="img-hearing2" src="https://drive.google.com/uc?export=view&id=1MbFtGmlDqsy1PU_WWRjAK2R1jPpwtLGV">
+                </div>
+                <div class="col-lg-6 banner-text">
+                    <h6 class="pengertian"> UKM MARS diciptakan sebagai UKM keilmiahan dan menjadi wadah bagi
+                        mahasiswa Polsri yang menyukai
+                        hal-hal yang bersifat ilmiah, penelitian, karya tulis ilmiah maupun berbentuk penulisan yang
+                        lainnya. </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pengurus">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="akhir text-center">
+                        <h1> Kepengurusan </h1>
+                        <p class="mars">UKM MARS </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-lg-2">
+                    <h6><i class="bi bi-eye-fill"></i>
+                        <a href="./about_us.html" class="text1"> More Search</a>
+                    </h6>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://drive.google.com/uc?export=view&id=1KTl2I8fSOh7tyKFxg6YynEc9eH1m3R7e" class="card-img-top text-center">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ketua Umum</h5>
+                            <p class="card-text">Soni hidayat</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://drive.google.com/uc?export=view&id=1sIMnIe40l9SivUVT1D0GjirAixe-etIX" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Wakil Ketua Umum</h5>
+                            <p class="card-text">M. Redho Ali Said</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://drive.google.com/uc?export=view&id=1SKo4ZkU4DjUB2OtjP53vW6Z7RvAXW0lx" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sekretaris Umum</h5>
+                            <p class="card-text">Selvia Rossa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://drive.google.com/uc?export=view&id=1H_sdOrRYZH9qKSDJGqepQ101gMEB2Xpb" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Wakil Sekretaris Umum</h5>
+                            <p class="card-text">Arizqa Hikmawah</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="kegiatan">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 text-center">
+                    <h1> Kegiatan </h1>
+                    <p class="mars">UKM MARS </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="kegiatan2">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-2">
+                    <h6><i class="bi bi-eye-fill"></i>
+                        <a href="./about_us.html" class="text1"> More Search</a>
+                    </h6>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-lg-6 banner-text">
+                    <h2> Workshop PKM Polsri 2021</h2>
+                    <h6> Woskhop PKM Polsri 2021 merupakan forum diskusi PKM yang berguna untuk
+                        menyukseskan persiapan mahasiswa Polsri untuk mengikuti kegiatan pkm 2022. </h6>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-kegiatan2" style: width="600px" height="auto" src="https://drive.google.com/uc?export=view&id=1x-wIobgy-Bz7klY0rvAv78igv6pYtUem">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section-footer">
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img class="img-footer" src="https://drive.google.com/uc?export=view&id=12Imti4g7K-zyHGhEo1IAvT9IkjJ7YAg4">
+                    <div class="kolom1">
+                        <h6 class="my-3"> Open Recruitment of UKM MARS </h6>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-envelope"></i>
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-5">
+                    <ul>
+                        <label> Information </label>
+                        <a href="./about_us.html">
+                            <li>About Us</li>
+                        </a>
+                        <a href="./about_us.html">
+                            <li>More Search</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mt-5">
+                    <ul>
+                        <label> Contact Us </label>
+                        <li>@ukm.marspolsri</li>
+                        <li>@pkmcenter_polsri</li>
+                        <li>@letswriting.mars</li>
+                        <li>mars@polsri.ac.id</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mt-5">
+                    <ul>
+                        <label> Department </label>
+                        <li>Ristek</li>
+                        <li>HRD</li>
+                        <li>Public Realtion</li>
+                        <li>Bussiness</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

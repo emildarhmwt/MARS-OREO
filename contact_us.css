@@ -1,0 +1,50 @@
+* {
+    background: #905A5A;
+}
+#section-header .img-logo {
+    width: 150px;
+    height: auto;
+    left: 141px;
+    top: 27px;
+}
+#section-header .btn-warning {
+    position: absolute;
+    width: 128px;
+    height:auto;
+    left: 900px;
+    top: 85px;
+
+    background: #E79A40;
+    border-radius: 30px;
+}
+
+#section-header .pt-4 {
+    font-family: Sahitya;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 39px;
+}
+#section-footer .img-footer {
+    width: 200px;
+    height: auto;
+}
+
+#section-footer h6 {
+    color: #ACACAC;
+}
+
+
+#section-footer i {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #ACACAC;
+}
+
+#section-footer .kolom1 {
+    color: #ACACAC;
+}
+
+#section-footer li {
+    list-style: none;
+}

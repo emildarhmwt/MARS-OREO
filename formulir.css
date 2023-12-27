@@ -1,0 +1,88 @@
+#section-header .img-logo {
+    width: 150px;
+    height: auto;
+    left: 141px;
+    top: 27px;
+}
+#section-header .btn-warning {
+    position: absolute;
+    width: 128px;
+    height:auto;
+    left: 900px;
+    top: 85px;
+
+    background: #E79A40;
+    border-radius: 30px;
+}
+#section-footer hr{
+    margin-top: 100px;
+    border: 2px solid #F7862D;
+}
+#section-header .pt-4 {
+    font-family: Sahitya;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 39px;
+}
+body {
+    background-image: url(https://drive.google.com/uc?export=view&id=19Tcx7IjhWFHWlrQOory4-EHnk5LUA_G3);
+    background-position: center;
+    background-size: cover;
+}
+#judul .img-logo {
+    margin-top: 40px;
+}
+#judul h1 {
+    font-family: Quantico;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 50px;
+}
+#judul p {
+    font-family: Quantico;
+    font-weight: bold;
+    font-size: 30px;
+    color : #8E1515;
+}
+.container {
+    padding: 40px 30px; 
+    margin-top: 30px;
+    margin-bottom: 70px;
+    background: rgba(233, 223, 211, 0.3);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 20px;
+}
+.container .label {
+    font-family: Rockwell;
+}
+.container .r-label {
+    font-family: Rockwell;
+}
+.container .input {
+    color: #580C0C;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+.info {
+    padding: 20px; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: rgba(233, 223, 211, 0.3);
+    border: 1px solid #000000;
+    box-sizing: border-box; 
+}
+.info li {
+    list-style: none;
+    font-family: Rockwell;
+}
+.info label {
+    font-family: Rockwell;
+}
